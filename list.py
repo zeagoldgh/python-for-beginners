@@ -100,3 +100,28 @@ for driver in podium:
 
     # Loop over the drivers list and print out a leadboard that includes a driver's finishing position and their name, like this:
 
+drivers = ["Charles", "Pierre", "Valterri", "Lewis", "George","Lando"]
+drivers[2] = "Valtterri"
+drivers.append("Esteban")
+drivers.extend(["Blue", "Elton", "Thomas"])
+drivers.remove("Thomas")
+drivers.remove("Charles")
+drivers.remove("Pierre")
+drivers.insert(7, "Pierre")
+drivers.remove("Blue")
+drivers.remove("Elton")
+drivers.insert(2, "Elton")
+podium = drivers[0:3]
+for drivers in podium:
+    print(drivers)
+
+# Loop over the drivers list and print out a leadboard that includes a driver's finishing position and their name, like this:
+
+
+counter = 1
+for driver in drivers:
+    print(str(counter) + ", " + driver)
+    counter += 1
+
+for num, name in enumerate(drivers, start = 1):
+    print(str(num) + ". " + name)
